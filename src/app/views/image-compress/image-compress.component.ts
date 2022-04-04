@@ -40,10 +40,6 @@ export class ImageCompressComponent implements OnInit {
         this.compressimg(this.orgurl, filename);
      let img = new Image();
         img.src = this.orgurl;
-        alert(img.width)
-
-
-
       }
       //read img url link to insert into browser
       fileread.readAsDataURL(event.target.files[0]);
