@@ -1,0 +1,11 @@
+<p>image-compress works!</p>
+<input type="file" id="file" (change)="change($event)" accept=".jpeg,.jpg,.png,.svg">
+<p>Filename: {{filename}}</p>
+
+<p>FileSizemb:{{filesizemb}}</p>
+
+
+<img [src]="orgurl" height="200px">
+
+<p>Image Compressed Size: {{sizeofcompressimg | number : '1.2-2'}}MB</p>
+<img [src]="imgcompressurl" height="200px">
